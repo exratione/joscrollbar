@@ -10,8 +10,9 @@ code in joScroller rather than try to do it yourself.
 One thing that core Jo lacks is a scrollbar component, however, hence this
 small project.
 
-You can add a joScrollbar to any joScroller component as shown in the simple
-example below:
+After including the Javascript and CSS in this repository in your mobile app
+project, you can add a joScrollbar to any joScroller component as shown in the
+simple example below:
 
     var screen, nav, stack, tabBar, scrollbar;
     screen = new joScreen(
@@ -38,6 +39,13 @@ example below:
     );
     scrollbar.calibrate();
 
+Orientation and Page Height Changes
+-----------------------------------
+
 You must ensure that the calibrate() method is invoked whenever the mobile
 device orientation changes from portrait to landscape or vice versa.
+
+Similarly if you do anything else to dynamically change the height of the page,
+you must again invoke the calibrate() method of the relevant joScrollbar
+instance.
 

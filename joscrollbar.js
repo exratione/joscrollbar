@@ -20,7 +20,7 @@
  *   // Defaults to 0.75 for an old-style iPhone. Needed to tinker the
  *   // joscrollbar to fit well - try altering it if yours doesn't.
  *   portraitHeightFactor: 0.75,
- *   // Defaults to 0.75 for an old-style iPhone. Needed to tinker the
+ *   // Defaults to 0.65 for an old-style iPhone. Needed to tinker the
  *   // joscrollbar to fit well - try altering it if yours doesn't.
  *   landscapeHeightFactor: 0.65
  * }
