@@ -1,0 +1,59 @@
+/*
+  This styles a joscrollbar such that it looks somewhat like the default iOS
+  scrollbar. Note that it is invisible if not needed because the page height
+  is smaller than the screen height.
+*/
+joscrollbar {
+  visibility: hidden;
+  z-index: -9999;
+  border: 1px solid rgba(255,255,255,0.7);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  width: 4px;
+  position: absolute;
+  top: 10px;
+  right: 2px;
+  height: 70%;
+}
+
+joscrollbar.active {
+  visibility: visible;
+  z-index: 9999;
+}
+
+joscrollbarpadding {
+  margin: 5px 1px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+  -moz-box-align: stretch;
+  -o-box-align: stretch;
+  box-align: stretch;
+  width: 2px;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  -o-box-orient: vertical;
+  -o-box-align: stretch;
+  box-orient: vertical;
+  box-align: stretch;
+}
+
+joscrollbarslider {
+  display: block;
+  background-color: rgba(255,255,255,0.7);
+  width: 4px;
+  height: 50%;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-transition: -webkit-transform 100ms ease;
+  -moz-animation-fill-mode: forwards;
+  -moz-transition: -moz-transform 100ms ease;
+  -o-animation-fill-mode: forwards;
+  -o-transition: -o-transform 100ms ease;
+  -ms-animation-fill-mode: forwards;
+  -ms-transition: -ms-transform 100ms ease;
+}
